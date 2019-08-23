@@ -19,7 +19,7 @@
     </div>
     </div>
 
-    <div style="float: left;background: aquamarine;width: 100%">
+    <div style="float: left;background: black;width: 85%;height: 100%;">
       <!--      <video id="video" src="https://security-test.jingcaiwang.cn/group1/M00/00/BF/rBMBLF1eSL2AKx9lAGzGJXfnZnE784.mp4"
       controls width="100%" height="100%"></video>-->
       <video id="video" width="100%" height="100%" controls="controls">
@@ -90,7 +90,6 @@ export default {
   .menu-container{
     float: left;
     background: black;
-    width: 300px;
     height: 100%;
     overflow: scroll;
   }
@@ -101,5 +100,6 @@ export default {
 .outer-container {
   position: relative;
   overflow: hidden;
+  width: 15%;
 }
 </style>
