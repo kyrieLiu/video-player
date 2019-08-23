@@ -7,7 +7,8 @@
  -->
 <template>
   <div  style="height: 100%;display: flex;">
-    <div  style="float: left; background: black;width: 300px;height: 100%;overflow: auto">
+    <div class="outer-container">
+    <div class="menu-container">
       <div
         class="video-menu"
         v-for="(item,index) in videoList"
@@ -15,6 +16,7 @@
         @click="clickMenu(item,index)"
         :class="{'selectMenu':selectIndex===index}"
       >{{item.name}}</div>
+    </div>
     </div>
 
     <div style="float: left;background: aquamarine;width: 100%">
@@ -46,39 +48,58 @@
 </template>
 
 <script>
-import { videoList } from "../lib/videopath";
+import { videoList } from '../lib/videopath'
 export default {
-  name: "HelloWorld",
-  data() {
+  name: 'HelloWorld',
+  data () {
     return {
       selectIndex: 0,
       videoList: []
-    };
+    }
   },
-  mounted() {
-    this.videoList = videoList;
+  mounted () {
+    this.videoList = videoList
   },
   methods: {
-    clickMenu(item, index) {
-      this.selectIndex = index;
-      let url = item.url;
-      document.querySelector("#video").src = url;
+    clickMenu (item, index) {
+      this.selectIndex = index
+      let url = item.url
+      document.querySelector('#video').src = url
     }
   }
-};
+}
 </script>
 
 <style scoped>
 .video-menu {
   color: rgb(120 125 130);
   cursor: pointer;
-  text-align: center;
-  line-height: 50px;
+  height: 50px;
+  align-items: center;
+  display: -webkit-flex;
+  margin-left: 20px;
+  word-break: break-all;
+
 }
 .video-menu:hover {
   color: rgb(23 130 59);
 }
 .selectMenu {
   color: rgb(23 130 59);
+}
+  .menu-container{
+    float: left;
+    background: black;
+    width: 300px;
+    height: 100%;
+    overflow: scroll;
+  }
+
+.menu-container::-webkit-scrollbar {
+  display: none;
+}
+.outer-container {
+  position: relative;
+  overflow: hidden;
 }
 </style>
