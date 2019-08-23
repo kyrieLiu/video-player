@@ -18,6 +18,7 @@
         <source src="https://security-test.jingcaiwang.cn/group1/M00/00/BF/rBMBLF1eSL2AKx9lAGzGJXfnZnE784.mp4" type="video/webm" />
         <object data="https://security-test.jingcaiwang.cn/group1/M00/00/BF/rBMBLF1eSL2AKx9lAGzGJXfnZnE784.mp4" width="100%" height="100%">
           <embed width="100%" height="100%" src="/i/movie.swf" />
+
         </object>
       </video>
     </div>
