@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-23 10:33:10
- * @LastEditTime: 2019-08-23 13:40:11
+ * @LastEditTime: 2019-08-23 16:20:35
  * @LastEditors: Please set LastEditors
  -->
 <template>
@@ -74,10 +74,12 @@ export default {
 .video-menu {
   color: rgb(120 125 130);
   cursor: pointer;
-  height: 50px;
+  /* height: 60px; */
   align-items: center;
   display: -webkit-flex;
   margin-left: 20px;
+  /* line-height: 30px; */
+  margin-top:20px;
   word-break: break-all;
 
 }
